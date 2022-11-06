@@ -1,0 +1,37 @@
+import random
+a=""
+f = open("C:/Users/bmgqk/Desktop/words.txt", 'r' ,encoding="UTF-8")
+lines = f.readlines()
+for line in lines:
+    a=line+a
+
+f.close()
+
+b=a.split(" ")
+def a():
+    for i in c:
+        if i == ',' or i == '' or i == '\n' or i == '-' or i == '~':
+            c.remove(i)
+c=[]
+for i in b:
+
+    text = i
+    text = text.encode('utf-8').decode('ascii', 'ignore')
+    text = text.strip()
+    c.append(text)
+for i in range(10):
+    a()
+
+random.shuffle(c)
+while c:
+    f = open("C:/Users/bmgqk/Desktop/word.txt", 'w', encoding="UTF-8")
+    n=len(c)
+    b=1
+    while b!=n+1:   
+        m=c.pop()+ " : \n" 
+        f.write(m)
+        b=b+1
+    f.close
+
+
+
